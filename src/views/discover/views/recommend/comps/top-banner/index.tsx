@@ -24,9 +24,9 @@ const TopBanner: FC<IProps> = () => {
   )
 
   /** 事件处理函数 */
+  // 提前变更index，同步背景与轮播图的动画
   function handleBeforeChange(o: number, n: number) {
     setCurrentIndex(n)
-    // setCurrentIndex(-1)
   }
   function handleAfterChange(current: number) {
     // setCurrentIndex(current)
@@ -53,10 +53,10 @@ const TopBanner: FC<IProps> = () => {
       <div className="banner wrap-v2">
         <BannerLeft>
           <Carousel
-            speed={300}
+            speed={1500}
             autoplay
             dots={false}
-            autoplaySpeed={3000}
+            autoplaySpeed={4000}
             effect="fade"
             ref={bannerRef}
             beforeChange={handleBeforeChange}

@@ -1,21 +1,23 @@
 import styled from 'styled-components'
 
 export const BannerWrapper = styled.div`
+  transition: 1.5s;
   .banner {
     height: 270px;
     display: flex;
     position: relative;
-    transition: 0.3s;
   }
 `
 
 export const BannerLeft = styled.div`
   position: relative;
   width: 730px;
-
+  z-index: 999;
+  cursor: pointer;
   .banner-item {
     overflow: hidden;
     height: 270px;
+
     .image {
       width: 100%;
     }
