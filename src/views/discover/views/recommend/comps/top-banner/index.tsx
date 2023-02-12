@@ -24,11 +24,12 @@ const TopBanner: FC<IProps> = () => {
   )
 
   /** 事件处理函数 */
-  function handleBeforeChange() {
+  function handleBeforeChange(o: number, n: number) {
+    setCurrentIndex(n)
     // setCurrentIndex(-1)
   }
   function handleAfterChange(current: number) {
-    setCurrentIndex(current)
+    // setCurrentIndex(current)
   }
   function handlePrevClick() {
     bannerRef.current?.prev()
@@ -52,9 +53,10 @@ const TopBanner: FC<IProps> = () => {
       <div className="banner wrap-v2">
         <BannerLeft>
           <Carousel
+            speed={300}
             autoplay
             dots={false}
-            autoplaySpeed={10000}
+            autoplaySpeed={3000}
             effect="fade"
             ref={bannerRef}
             beforeChange={handleBeforeChange}

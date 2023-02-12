@@ -5,6 +5,7 @@ export const BannerWrapper = styled.div`
     height: 270px;
     display: flex;
     position: relative;
+    transition: 0.3s;
   }
 `
 
