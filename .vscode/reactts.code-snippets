@@ -1,0 +1,21 @@
+{
+  "tsreact": {
+    "prefix": "tsreact",
+    "body": [
+      "import React, { memo } from 'react'",
+      "import type { FC, ReactNode } from 'react'",
+      "",
+      "interface IProps {",
+      "  children?: ReactNode",
+      "}",
+      "",
+      "const ${1:home}: FC<IProps> = () => {",
+      "  return <div>${1:home}</div>",
+      "}",
+      "",
+      "export default memo(${1:home})",
+      ""
+    ],
+    "description": "tsreact"
+  }
+}
