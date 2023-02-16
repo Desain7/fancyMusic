@@ -5,7 +5,7 @@ import {
   fetchRankingDataAction,
   // fetchBannerDataAction,
   // fetchHotRecommendAction,
-  // fetchNewAlbumAction
+  // fetchNewAlbumAction,
   fetchRecommendDataAction
 } from './store/recommend'
 import TopBanner from './comps/top-banner'

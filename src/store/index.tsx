@@ -7,10 +7,12 @@ import {
 } from 'react-redux'
 
 import recommendReducer from '../views/discover/views/recommend/store/recommend'
+import playerReducer from '../views/player/store/player'
 
 const store = configureStore({
   reducer: {
-    recommend: recommendReducer
+    recommend: recommendReducer,
+    player: playerReducer
   }
 })
 
