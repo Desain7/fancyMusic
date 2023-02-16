@@ -2,14 +2,17 @@ import styled from 'styled-components'
 
 export const PlayerBarWrapper = styled.div`
   position: fixed;
+  transition: 0.3s;
   z-index: 99;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -42px;
   height: 52px;
   background-position: 0 0;
   background-repeat: repeat;
-
+  &:hover {
+    bottom: 0;
+  }
   .content {
     display: flex;
     align-items: center;
