@@ -9,7 +9,6 @@ export const RankingWrapper = styled.div`
 
     > .left {
       background-color: #f9f9f9;
-      padding: 20px;
       width: 240px;
     }
 

@@ -8,11 +8,13 @@ import {
 
 import recommendReducer from '../views/discover/views/recommend/store/recommend'
 import playerReducer from '../views/player/store/player'
+import rankingReducer from '../views/discover/views/ranking/store/ranking'
 
 const store = configureStore({
   reducer: {
     recommend: recommendReducer,
-    player: playerReducer
+    player: playerReducer,
+    ranking: rankingReducer
   }
 })
 
