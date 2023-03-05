@@ -1,4 +1,5 @@
-export const BASE_URL = 'http://localhost:3000'
+export const BASE_URL =
+  'https://service-4bsx9uek-1310054067.gz.apigw.tencentcs.com/release/'
 export const TIME_OUT = 10000
 
 if (process.env.NODE_ENV == 'development') {
